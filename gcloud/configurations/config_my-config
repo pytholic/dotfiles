@@ -1,0 +1,8 @@
+[core]
+project = mlops-demo-408506
+account = rajahaseeb147147@gmail.com
+
+[compute]
+region = asia-northeast3
+zone = asia-northeast3-a
+
