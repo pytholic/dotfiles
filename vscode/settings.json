@@ -1,0 +1,205 @@
+{
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.wordWrap": "on",
+  "editor.autoClosingBrackets": "always",
+  "editor.rulers": [99],
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
+  "settingsSync.ignoredExtensions": [],
+  "editor.formatOnSave": true,
+
+  // Terminal
+  "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
+
+  // Notebook
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": true,
+    "notebook.source.organizeImports": true
+  },
+
+  // Language specific config
+  // Python
+  "[python]": {
+    "editor.semanticHighlighting.enabled": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // C-Cpp-Cmake
+  "cmake.configureOnOpen": false,
+  "cmake.automaticReconfigure": false,
+  "cmake.configureOnEdit": false,
+  "C_Cpp.intelliSenseEngine": "default",
+
+  // Etc
+  "autoDocstring.docstringFormat": "numpy",
+  "black-formatter.args": ["--line-length", "99"],
+  "pylint.args": ["--max-line-length=99", "--disable=E1120,C0116,C0114,C0115"],
+  "isort.args": [
+    "--profile",
+    "black",
+    "--filter-files",
+    "--force-grid-wrap",
+    "3",
+    "--include-trailing-comma"
+  ],
+
+  "gitlens.graph.layout": "editor",
+  "ruff.organizeImports": false,
+
+  // Better comments
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#FAA0A0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@",
+      "color": "#FAA0A0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+  // VSpaceCode
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+
+  // Sync-Rsync
+  "sync-rsync.sites": [
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
+      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/haseeb-onboarding-engine-inference",
+      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/haseeb-onboarding-engine-inference",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    }
+  ],
+  "sync-rsync.include": [".vscode", ".git"],
+  // "sync-rsync.args": [
+  //   "--rsh=ssh"
+  // ],
+  "sync-rsync.executableShell": "/bin/bash",
+  // "sync-rsync.onSave": true,
+  "sync-rsync.delete": true,
+  "remote.autoForwardPortsSource": "hybrid",
+
+  // TODO Tree
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "HACK"],
+  "todo-tree.highlights.backgroundColourScheme": [
+    "orange",
+    "#FF8096",
+    "green",
+    "#89CFF0"
+  ],
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "gutterIcon": true
+    },
+    "FIXME": {
+      "foreground": "white",
+      "iconColour": "yellow",
+      "gutterIcon": true
+    },
+    "BUG": {
+      "icon": "bug",
+      "foreground": "white",
+      "gutterIcon": true
+    },
+    "HACK": {
+      "icon": "checkbox",
+      "foreground": "white",
+      "gutterIcon": true
+    }
+  },
+  "workbench.colorTheme": "Nord"
+}
+
