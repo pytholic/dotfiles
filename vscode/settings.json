@@ -30,7 +30,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "always"
     }
   },
 
@@ -49,8 +49,7 @@
     "black",
     "--filter-files",
     "--force-grid-wrap",
-    "3",
-    "--include-trailing-comma"
+    "3"
   ],
 
   "gitlens.graph.layout": "editor",
