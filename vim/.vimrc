@@ -23,7 +23,13 @@ set mouse=a
 set smartindent
 set tabstop=4
 set shiftwidth=4
+
 " Use space characters instead of tabs.
+set expandtab
+
+" Wrap lines
+set wrap
+
 set expandtab
 " Wrap lines
 set wrap
@@ -39,3 +45,6 @@ set history=1000
 
 " Paste with formatting
 set paste
+
+let mapleader = " "
+noremap <Leader>y "*y
