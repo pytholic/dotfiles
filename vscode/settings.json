@@ -158,7 +158,6 @@
   },
 
   "window.titleBarStyle": "custom",
-  "vscode_vibrancy.opacity": 0.5,
   "workbench.colorTheme": "Iceberg",
 
   "workbench.colorCustomizations": {
@@ -166,6 +165,5 @@
     "editorCursor.foreground": "#e6af41",
     "editor.lineHighlightBackground": "#c6c6c615"
   },
-  "vscode_vibrancy.type": "fullscreen-ui",
   "editor.cursorWidth": 2
 }
