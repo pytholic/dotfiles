@@ -116,7 +116,6 @@
       "shell": "ssh -i ~/.ssh/id_rsa"
     }
   ],
-  "sync-rsync.delete": false,
   "sync-rsync.include": [".vscode", ".git"],
   // "sync-rsync.args": [
   //   "--rsh=ssh"
@@ -157,13 +156,11 @@
     }
   },
 
-  "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Iceberg",
-
-  "workbench.colorCustomizations": {
-    "editorLineNumber.activeForeground": "#fb9434",
-    "editorCursor.foreground": "#e6af41",
-    "editor.lineHighlightBackground": "#c6c6c615"
-  },
-  "editor.cursorWidth": 2
+  "workbench.colorTheme": "Nord"
+  // "workbench.colorCustomizations": {
+  //   "editorLineNumber.activeForeground": "#fb9434",
+  //   "editorCursor.foreground": "#e6af41",
+  //   "editor.lineHighlightBackground": "#c6c6c615"
+  // },
+  // "editor.cursorWidth": 2
 }
