@@ -158,13 +158,14 @@
   },
 
   "window.titleBarStyle": "custom",
-  "vscode_vibrancy.opacity": 0,
-  "workbench.colorTheme": "Rosé Pine Moon",
+  "vscode_vibrancy.opacity": 0.5,
+  "workbench.colorTheme": "Iceberg",
 
   "workbench.colorCustomizations": {
     "editorLineNumber.activeForeground": "#fb9434",
     "editorCursor.foreground": "#e6af41",
     "editor.lineHighlightBackground": "#c6c6c615"
   },
-  "vscode_vibrancy.type": "fullscreen-ui"
+  "vscode_vibrancy.type": "fullscreen-ui",
+  "editor.cursorWidth": 2
 }
