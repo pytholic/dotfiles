@@ -2,7 +2,7 @@
   // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.wordWrap": "on",
   "editor.autoClosingBrackets": "always",
   "editor.rulers": [99],
@@ -15,7 +15,7 @@
 
   // Terminal
   "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 16,
 
   // Notebook
   "notebook.codeActionsOnSave": {
@@ -51,58 +51,8 @@
     "--force-grid-wrap",
     "3"
   ],
-
   "gitlens.graph.layout": "editor",
   "ruff.organizeImports": false,
-
-  // Better comments
-  "better-comments.tags": [
-    {
-      "tag": "!",
-      "color": "#FF2D00",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "?",
-      "color": "#3498DB",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "//",
-      "color": "#474747",
-      "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "*",
-      "color": "#FAA0A0",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "@",
-      "color": "#FAA0A0",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
-  ],
 
   // VSpaceCode
   "vim.easymotion": true,
@@ -151,6 +101,11 @@
   // Sync-Rsync
   "sync-rsync.sites": [
     {
+      "localPath": "/Users/pytholic/Developer/personal/Projects/mlops/mlops-orbit",
+      "remotePath": "pytholic@34.64.207.252:/home/pytholic/mlops-zoomcamp-pytholic",
+      "shell": "ssh -i ~/.ssh/mlops-zoomcamp"
+    },
+    {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
       "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/insight-engine",
       "shell": "ssh -i ~/.ssh/id_rsa"
@@ -161,11 +116,13 @@
       "shell": "ssh -i ~/.ssh/id_rsa"
     }
   ],
+  "sync-rsync.delete": false,
   "sync-rsync.include": [".vscode", ".git"],
   // "sync-rsync.args": [
   //   "--rsh=ssh"
   // ],
   "sync-rsync.executableShell": "/bin/bash",
+  // "sync-rsync.onSaveIndividual": true,
   // "sync-rsync.onSave": true,
   "sync-rsync.delete": true,
   "remote.autoForwardPortsSource": "hybrid",
@@ -199,5 +156,15 @@
       "gutterIcon": true
     }
   },
-  "workbench.colorTheme": "Nord"
+
+  "window.titleBarStyle": "custom",
+  "vscode_vibrancy.opacity": 0,
+  "workbench.colorTheme": "Rosé Pine Moon",
+
+  "workbench.colorCustomizations": {
+    "editorLineNumber.activeForeground": "#fb9434",
+    "editorCursor.foreground": "#e6af41",
+    "editor.lineHighlightBackground": "#c6c6c615"
+  },
+  "vscode_vibrancy.type": "fullscreen-ui"
 }
