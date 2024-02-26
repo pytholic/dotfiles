@@ -27,11 +27,12 @@
   // Python
   "[python]": {
     "editor.semanticHighlighting.enabled": false,
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "never",
-      "source.organizeImports": "always"
-    }
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.organizeImports": "always"
   },
 
   // C-Cpp-Cmake
