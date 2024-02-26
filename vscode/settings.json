@@ -29,7 +29,7 @@
     "editor.semanticHighlighting.enabled": false,
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
+      "source.fixAll": "never",
       "source.organizeImports": "always"
     }
   },
@@ -156,10 +156,4 @@
     }
   },
   "workbench.colorTheme": "Nord"
-  // "workbench.colorCustomizations": {
-  //   "editorLineNumber.activeForeground": "#fb9434",
-  //   "editorCursor.foreground": "#e6af41",
-  //   "editor.lineHighlightBackground": "#c6c6c615"
-  // },
-  // "editor.cursorWidth": 2
 }
