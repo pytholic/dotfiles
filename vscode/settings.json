@@ -6,7 +6,7 @@
   "editor.wordWrap": "on",
   "editor.autoClosingBrackets": "always",
   "editor.rulers": [99],
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
