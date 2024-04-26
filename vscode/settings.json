@@ -7,7 +7,7 @@
   "editor.autoClosingBrackets": "always",
   "editor.rulers": [99],
   "editor.lineNumbers": "on",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "catppuccin-macchiato",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
   "settingsSync.ignoredExtensions": [],
@@ -156,5 +156,8 @@
       "gutterIcon": true
     }
   },
+  "notebook.lineNumbers": "on",
+  "editor.semanticHighlighting.enabled": true,
+  "terminal.integrated.minimumContrastRatio": 1,
   "workbench.colorTheme": "Nord"
 }
