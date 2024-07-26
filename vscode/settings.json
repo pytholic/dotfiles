@@ -7,7 +7,6 @@
   "editor.autoClosingBrackets": "always",
   "editor.rulers": [99],
   "editor.lineNumbers": "on",
-  "workbench.iconTheme": "catppuccin-macchiato",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
   "settingsSync.ignoredExtensions": [],
@@ -50,7 +49,8 @@
     "black",
     "--filter-files",
     "--force-grid-wrap",
-    "3"
+    "3",
+    "--keep-unused"
   ],
   "gitlens.graph.layout": "editor",
   "ruff.organizeImports": false,
@@ -108,16 +108,60 @@
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
-      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/insight-engine",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/workspace/insight-engine",
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Developer/work/haseeb-onboarding-engine-inference",
-      "remotePath": "pytholic@10.110.0.101:/lunit/home/pytholic/work/haseeb-onboarding-engine-inference",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-inference-postprocess",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/workspace/insight-inference-postprocess",
       "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/research-cs-gc",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/workspace/research-cs-gc",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/internal-validation",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/workspace/internal-validation",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "exclude": [".git", ".vscode", "rdp_results/", "*.json"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_litgpt",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "exclude": [".git", ".vscode", "checkpoints/", ".venv/", ".cache/"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_SmolLM",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_SmolLM",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "exclude": [
+        ".git",
+        ".vscode",
+        ".venv/",
+        ".cache/",
+        "poetry.lock",
+        "*.pth"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_from_sratch",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_from_scratch",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "exclude": [
+        ".git",
+        ".vscode",
+        "checkpoints/",
+        ".venv/",
+        "./gpt2/",
+        "./archive/"
+      ]
     }
   ],
   "sync-rsync.include": [".vscode", ".git"],
+  "sync-rsync.exclude": [".venv"],
   // "sync-rsync.args": [
   //   "--rsh=ssh"
   // ],
@@ -159,5 +203,15 @@
   "notebook.lineNumbers": "on",
   "editor.semanticHighlighting.enabled": true,
   "terminal.integrated.minimumContrastRatio": 1,
-  "workbench.colorTheme": "Nord"
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Nord",
+  "githubPullRequests.fileListLayout": "flat",
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+  "githubPullRequests.pullBranch": "never",
+  "[makefile]": {
+    "editor.insertSpaces": false
+  }
 }

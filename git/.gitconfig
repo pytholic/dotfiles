@@ -16,7 +16,7 @@
 [diff]
     colorMoved = default
 [user]
-	name = pytholic
+	name = Raja Haseeb
 	email = rajahaseeb147@gmail.com
 [credential]
 	helper = store
@@ -35,6 +35,9 @@
 	enabled = true
 [init]
 	defaultBranch = main
+[push]
+    default = simple
+    force = push.forceIfLease
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
