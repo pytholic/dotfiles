@@ -1,7 +1,11 @@
 {
   // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Comic Mono, Hack Nerd Font Mono, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Comic Mono",
+  // "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "Cascadia Code",
+  // "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.wordWrap": "on",
   "editor.autoClosingBrackets": "always",
@@ -131,7 +135,14 @@
       "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
       "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_litgpt",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "exclude": [".git", ".vscode", "checkpoints/", ".venv/", ".cache/"]
+      "exclude": [
+        ".git",
+        ".vscode",
+        "checkpoints/",
+        ".venv/",
+        ".cache/",
+        "out/"
+      ]
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_SmolLM",
@@ -156,7 +167,8 @@
         "checkpoints/",
         ".venv/",
         "./gpt2/",
-        "./archive/"
+        "./archive/",
+        "*.pth"
       ]
     }
   ],
