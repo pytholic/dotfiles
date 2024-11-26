@@ -37,7 +37,7 @@
 	defaultBranch = main
 [push]
     default = simple
-    force = push.forceIfLease
+    autoForceWithLease = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
