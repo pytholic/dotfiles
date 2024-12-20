@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git fzf zsh-autosuggestions zsh-syntax-highlighting web-search poetry)
+plugins=(git fzf zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -152,3 +152,10 @@ unset __conda_setup
 # <<< conda initialize <<<
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+export OGC_ACCESS_TOKEN="api|gnYi9eZ0Nbv2ZIZLesQ9VHNlscxI1gSD3Mwecj8GqhA"
+
+# add ogc to PATH
+export PATH=$PATH:$HOME/.ogc/bin
+
+. "$HOME/.local/bin/env"

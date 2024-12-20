@@ -1,7 +1,7 @@
 [core]
 account = rajahaseeb147@lunit.io
-project = radiology-ai-research
+project = ai-research-322406
 
 [compute]
-zone = europe-west4-a
+zone = europe-west4-c
 

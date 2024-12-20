@@ -2,41 +2,38 @@
   // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Comic Mono",
-  // "editor.fontFamily": "Fira Code",
-  // "editor.fontFamily": "Cascadia Code",
-  // "editor.fontFamily": "Jetbrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.wordWrap": "on",
   "editor.autoClosingBrackets": "always",
-  "editor.rulers": [99],
+  "editor.rulers": [100],
   "editor.lineNumbers": "on",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
   "settingsSync.ignoredExtensions": [],
-  "editor.formatOnSave": true,
 
   // Terminal
   "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
   "terminal.integrated.fontSize": 16,
 
-  // Notebook
-  "notebook.codeActionsOnSave": {
-    "notebook.source.fixAll": true,
-    "notebook.source.organizeImports": true
-  },
-
   // Language specific config
   // Python
   "[python]": {
-    "editor.semanticHighlighting.enabled": false,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.semanticHighlighting.enabled": true,
+    // "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "notebook.formatOnSave.enabled": false,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.organizeImports": "explicit"
   },
 
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
-    "source.organizeImports": "always"
-  },
+  // Ruff setup
+  "ruff.lineLength": 100,
 
   // C-Cpp-Cmake
   "cmake.configureOnOpen": false,
@@ -46,18 +43,6 @@
 
   // Etc
   "autoDocstring.docstringFormat": "numpy",
-  "black-formatter.args": ["--line-length", "99"],
-  "pylint.args": ["--max-line-length=99", "--disable=E1120,C0116,C0114,C0115"],
-  "isort.args": [
-    "--profile",
-    "black",
-    "--filter-files",
-    "--force-grid-wrap",
-    "3",
-    "--keep-unused"
-  ],
-  "gitlens.graph.layout": "editor",
-  "ruff.organizeImports": false,
 
   // VSpaceCode
   "vim.easymotion": true,
@@ -116,6 +101,11 @@
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
+      "remotePath": "pytholic@neptune4:/lunit/home/pytholic/work/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-inference-postprocess",
       "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/workspace/insight-inference-postprocess",
       "shell": "ssh -i ~/.ssh/id_rsa"
@@ -129,7 +119,7 @@
       "localPath": "/Users/lunit_haseebraja/Developer/work/internal-validation",
       "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/workspace/internal-validation",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "exclude": [".git", ".vscode", "rdp_results/", "*.json"]
+      "exclude": [".git", ".vscode", "rdp_results/", "*.json", "db/", "src/"]
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
@@ -225,5 +215,9 @@
   "githubPullRequests.pullBranch": "never",
   "[makefile]": {
     "editor.insertSpaces": false
-  }
+  },
+  "jupyter.askForKernelRestart": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "supermaven.enableFixWithSupermaven": true,
+  "notebook.defaultFormatter": "ms-python.black-formatter",
 }
