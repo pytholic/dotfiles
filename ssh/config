@@ -1,0 +1,73 @@
+Host gcp-mlops-zoomcamp
+    HostName 34.64.207.252 # VM Public IP
+    User pytholic-office # VM user
+    IdentityFile ~/.ssh/mlops-zoomcamp # Private SSH key file
+    StrictHostKeyChecking no
+    LocalForward 5000 0.0.0.0:5000
+    LocalForward 4200 127.0.0.1:4200
+
+Host galaxy1
+    HostName 10.110.0.101
+    User pytholic
+    IdentityFile /Users/lunit_haseebraja/.ssh/id_rsa
+    AddKeysToAgent yes
+
+
+Host galaxy13
+    HostName 10.110.0.113
+    User pytholic
+    IdentityFile /Users/lunit_haseebraja/.ssh/id_rsa
+    AddKeysToAgent yes
+	LocalForward 8888 127.0.0.1:8888
+	UseKeychain yes 
+	ServerAliveInterval 60
+    ServerAliveCountMax 3
+    TCPKeepAlive yes
+
+Host galaxy25
+    HostName 10.110.0.125
+    User pytholic
+    IdentityFile /Users/lunit_haseebraja/.ssh/id_rsa
+    AddKeysToAgent yes
+	LocalForward 8888 127.0.0.1:8888
+	UseKeychain yes 
+	ServerAliveInterval 60
+    ServerAliveCountMax 3
+    TCPKeepAlive yes
+
+Host neptune4
+    HostName 10.110.2.104
+    User pytholic
+    IdentityFile /Users/lunit_haseebraja/.ssh/id_rsa
+    AddKeysToAgent yes
+	UseKeychain yes 
+	ServerAliveInterval 60
+    ServerAliveCountMax 3
+    TCPKeepAlive yes
+
+Host lunit-gcp-mlflow-tracking-server
+    HostName 35.204.168.68
+    User pytholic
+    IdentityFile /Users/lunit_haseebraja/.ssh/lunit_mlflow_tracking_server
+    AddKeysToAgent yes
+	ServerAliveInterval 60
+    ServerAliveCountMax 120
+	TCPKeepAlive yes
+
+Host pytholic-dev
+    HostName 35.204.78.162
+    User pytholic
+    IdentityFile /Users/lunit_haseebraja/.ssh/pytholic_dev
+    AddKeysToAgent yes
+	UseKeychain yes
+	ServerAliveInterval 60
+    ServerAliveCountMax 3
+    TCPKeepAlive yes
+
+
+Host pytholic-ori-dev
+    HostName 141.94.173.116
+    User ubuntu
+    IdentityFile /Users/lunit_haseebraja/.ssh/pytholic_ori_dev
+    AddKeysToAgent yes
+	UseKeychain yes
