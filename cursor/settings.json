@@ -113,14 +113,73 @@
         {
             "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/llama-cpp-test",
             "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llama-cpp-test",
-            "shell": "ssh -i ~/.ssh/mlops-zoomcamp",
-            "exclude": [
-                ".mypy*",
-                ".cursorrules",
-                "models_gguf/",
-                "models_hf/"
-                "llama.cpp",
-                "llama-cpp-python"
+            "shell": "ssh -i ~/.ssh/id_rsa",
+            "args": [
+                "--exclude=.mypy*",
+                "--exclude=.cursorrules",
+                "--exclude=models_gguf/",
+                "--exclude=models_hf/",
+                "--exclude=llama.cpp",
+                "--exclude=llama-cpp-python"
+            ]
+        },
+        {
+            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/ollama",
+            "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/ollama",
+            "shell": "ssh -i ~/.ssh/id_rsa",
+            "args": [
+                "--exclude=.mypy*",
+                "--exclude=.cursorrules",
+                "--exclude=models_hf/",
+                "--exclude=models_gguf/",
+                "--exclude=ollama/"
+            ]
+        },
+        {
+            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/ollama",
+            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/ollama",
+            "shell": "ssh -i ~/.ssh/id_rsa",
+            "args": [
+                "--exclude=.mypy*",
+                "--exclude=.cursorrules",
+                "--exclude=models_hf/",
+                "--exclude=models_gguf/",
+                "--exclude=ollama/"
+            ]
+        },
+        {
+            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/llama-cpp-test",
+            "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/llama-cpp-test",
+            "shell": "ssh -i ~/.ssh/id_rsa",
+            "args": [
+                "--exclude=.mypy*",
+                "--exclude=.cursorrules",
+                "--exclude=models_gguf/",
+                "--exclude=models_hf/",
+                "--exclude=llama.cpp",
+                "--exclude=llama-cpp-python"
+            ]
+        },
+        {
+            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/exllama",
+            "remotePath": "pytholic@pytholic-dev-llm-inference:/home/pytholic/exllama",
+            "shell": "ssh -i ~/.ssh/id_rsa",
+            "args": [
+                "--exclude=.mypy*",
+                "--exclude=.cursorrules",
+                "--exclude=models_exl2/",
+                "--exclude=models_hf/"
+            ]
+        },
+        {
+            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/exllama",
+            "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/exllama",
+            "shell": "ssh -i ~/.ssh/id_rsa",
+            "args": [
+                "--exclude=.mypy*",
+                "--exclude=.cursorrules",
+                "--exclude=models_exl2/",
+                "--exclude=models_hf/"
             ]
         },
         {
@@ -147,62 +206,68 @@
             "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/internal-validation",
             "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/internal-validation",
             "shell": "ssh -i ~/.ssh/id_rsa",
-            "exclude": [
-                ".git",
-                ".vscode",
-                "rdp_results/",
-                "*.json",
-                "db/",
-                "src/"
+            "args": [
+                "--exclude=rdp_results/",
+                "--exclude=*.json",
+                "--exclude=db/",
+                "--exclude=src/"
             ]
         },
         {
             "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/nlp/llm_litgpt",
             "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
             "shell": "ssh -i ~/.ssh/id_rsa",
-            "exclude": [
-                ".git",
-                ".vscode",
-                "checkpoints/",
-                ".venv/",
-                ".cache/",
-                "out/"
+            "args": [
+                "--exclude=out/"
             ]
         },
         {
             "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_SmolLM",
             "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_SmolLM",
             "shell": "ssh -i ~/.ssh/id_rsa",
-            "exclude": [
-                ".git",
-                ".vscode",
-                ".venv/",
-                ".cache/",
-                "poetry.lock",
-                "*.pth"
+            "args": [
+                "--exclude=.cache/",
+                "--exclude=poetry.lock"
             ]
         },
         {
             "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_from_sratch",
             "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_from_scratch",
             "shell": "ssh -i ~/.ssh/id_rsa",
-            "exclude": [
-                ".git",
-                ".vscode",
-                "checkpoints/",
-                ".venv/",
-                "./gpt2/",
-                "./archive/",
-                "*.pth"
+            "args": [
+                "--exclude=./gpt2/",
+                "--exclude=./archive/"
+            ]
+        },
+        {
+            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/model-registry-work/lunit-model-registry",
+            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/lunit-model-registry",
+            "shell": "ssh -i ~/.ssh/id_rsa",
+            "args": [
+                "--exclude=example.com",
+                "--exclude=mlruns",
+                "--exclude=tmp/"
             ]
         }
     ],
-    "sync-rsync.include": [
-        ".vscode",
-        ".git"
-    ],
     "sync-rsync.exclude": [
-        ".venv"
+        ".venv",
+        "tmp/",
+        "*.pth",
+        "*.onnx",
+        "checkpoints/",
+        ".vscode",
+        ".git",
+        ".cache/",
+        "__pycache__/",
+        "dist/",
+        "build/",
+        ".mypy_cache/",
+        ".ruff_cache/",
+        ".DS_Store",
+        ".gitignore",
+        ".gitattributes",
+        ".pytest_cache",
     ],
     "sync-rsync.executableShell": "/bin/bash",
     "sync-rsync.delete": true,
