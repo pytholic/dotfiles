@@ -1,391 +1,311 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "Comic Mono",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "editor.wordWrap": "on",
-    "editor.autoClosingBrackets": "always",
-    "editor.rulers": [
-        100
-    ],
-    "editor.lineNumbers": "on",
-    "terminal.integrated.fontWeightBold": "normal",
-    "terminal.integrated.fontWeight": "normal",
-    "settingsSync.ignoredExtensions": [],
-    "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
-    "terminal.integrated.fontSize": 16,
-    "[python]": {
-        "editor.semanticHighlighting.enabled": true,
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "never"
-        },
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    "notebook.formatOnSave.enabled": false,
-    "notebook.codeActionsOnSave": {
-        "notebook.source.organizeImports": "never"
-    },
-    "ruff.lineLength": 100,
-    "cmake.configureOnOpen": false,
-    "cmake.automaticReconfigure": false,
-    "cmake.configureOnEdit": false,
-    "C_Cpp.intelliSenseEngine": "default",
-    "autoDocstring.docstringFormat": "numpy",
-    "vim.easymotion": true,
-    "vim.useSystemClipboard": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<space>"
-            ],
-            "commands": [
-                "vspacecode.space"
-            ]
-        },
-        {
-            "before": [
-                ","
-            ],
-            "commands": [
-                "vspacecode.space",
-                {
-                    "command": "whichkey.triggerKey",
-                    "args": "m"
-                }
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<space>"
-            ],
-            "commands": [
-                "vspacecode.space"
-            ]
-        },
-        {
-            "before": [
-                ","
-            ],
-            "commands": [
-                "vspacecode.space",
-                {
-                    "command": "whichkey.triggerKey",
-                    "args": "m"
-                }
-            ]
-        },
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        }
-    ],
-    "sync-rsync.sites": [
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/research-cs-e2e-verification",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-e2e-verification",
-            "shell": "ssh -i ~/.ssh/id_rsa"
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine-toolkit",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-toolkit",
-            "shell": "ssh -i ~/.ssh/id_rsa"
-        },
-        {
-            "localPath": "/Users/pytholic/Documents/Developer/personal/Projects/mlops/mlops-orbit",
-            "remotePath": "pytholic@34.64.207.252:/home/pytholic/mlops-zoomcamp-pytholic",
-            "shell": "ssh -i ~/.ssh/mlops-zoomcamp"
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/llama-cpp-test",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llama-cpp-test",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=.mypy*",
-                "--exclude=.cursorrules",
-                "--exclude=models_gguf/",
-                "--exclude=models_hf/",
-                "--exclude=llama.cpp",
-                "--exclude=llama-cpp-python"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/ollama",
-            "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/ollama",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=.mypy*",
-                "--exclude=.cursorrules",
-                "--exclude=models_hf/",
-                "--exclude=models_gguf/",
-                "--exclude=ollama/"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/ollama",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/ollama",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=.mypy*",
-                "--exclude=.cursorrules",
-                "--exclude=models_hf/",
-                "--exclude=models_gguf/",
-                "--exclude=ollama/"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/llama-cpp-test",
-            "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/llama-cpp-test",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=.mypy*",
-                "--exclude=.cursorrules",
-                "--exclude=models_gguf/",
-                "--exclude=models_hf/",
-                "--exclude=llama.cpp",
-                "--exclude=llama-cpp-python"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/exllama",
-            "remotePath": "pytholic@pytholic-dev-llm-inference:/home/pytholic/exllama",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=.mypy*",
-                "--exclude=.cursorrules",
-                "--exclude=models_exl2/",
-                "--exclude=models_hf/"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/exllama",
-            "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/exllama",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=.mypy*",
-                "--exclude=.cursorrules",
-                "--exclude=models_exl2/",
-                "--exclude=models_hf/"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine",
-            "shell": "ssh -i ~/.ssh/id_rsa"
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine",
-            "remotePath": "pytholic@neptune4:/lunit/home/pytholic/work/insight-engine",
-            "shell": "ssh -i ~/.ssh/id_rsa"
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-inference-postprocess",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-inference-postprocess",
-            "shell": "ssh -i ~/.ssh/id_rsa"
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/research-cs-gc",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-gc",
-            "shell": "ssh -i ~/.ssh/id_rsa"
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/internal-validation",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/internal-validation",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=rdp_results/",
-                "--exclude=*.json",
-                "--exclude=db/",
-                "--exclude=src/"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/nlp/llm_litgpt",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=out/"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_SmolLM",
-            "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_SmolLM",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=.cache/",
-                "--exclude=poetry.lock"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_from_sratch",
-            "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_from_scratch",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=./gpt2/",
-                "--exclude=./archive/"
-            ]
-        },
-        {
-            "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/model-registry-work/lunit-model-registry",
-            "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/lunit-model-registry",
-            "shell": "ssh -i ~/.ssh/id_rsa",
-            "args": [
-                "--exclude=example.com",
-                "--exclude=mlruns",
-                "--exclude=tmp/"
-            ]
-        }
-    ],
-    "sync-rsync.exclude": [
-        ".venv",
-        "tmp/",
-        "*.pth",
-        "*.onnx",
-        "checkpoints/",
-        ".vscode",
-        ".git",
-        ".cache/",
-        "__pycache__/",
-        "dist/",
-        "build/",
-        ".mypy_cache/",
-        ".ruff_cache/",
-        ".DS_Store",
-        ".gitignore",
-        ".gitattributes",
-        ".pytest_cache",
-    ],
-    "sync-rsync.executableShell": "/bin/bash",
-    "sync-rsync.delete": true,
-    "remote.autoForwardPortsSource": "hybrid",
-    "todo-tree.general.tags": [
-        "TODO",
-        "FIXME",
-        "BUG",
-        "HACK"
-    ],
-    "todo-tree.highlights.backgroundColourScheme": [
-        "orange",
-        "#FF8096",
-        "green",
-        "#89CFF0"
-    ],
-    "todo-tree.highlights.useColourScheme": true,
-    "todo-tree.highlights.customHighlight": {
-        "TODO": {
-            "gutterIcon": true
-        },
-        "FIXME": {
-            "foreground": "white",
-            "iconColour": "yellow",
-            "gutterIcon": true
-        },
-        "BUG": {
-            "icon": "bug",
-            "foreground": "white",
-            "gutterIcon": true
-        },
-        "HACK": {
-            "icon": "checkbox",
-            "foreground": "white",
-            "gutterIcon": true
-        }
-    },
-    "notebook.lineNumbers": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Comic Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.wordWrap": "on",
+  "editor.autoClosingBrackets": "always",
+  "editor.rulers": [100],
+  "editor.lineNumbers": "on",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
+  "[python]": {
     "editor.semanticHighlighting.enabled": true,
-    "terminal.integrated.minimumContrastRatio": 1,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Nord",
-    "githubPullRequests.fileListLayout": "flat",
-    "rust-analyzer.inlayHints.typeHints.enable": false,
-    "rust-analyzer.inlayHints.chainingHints.enable": false,
-    "rust-analyzer.inlayHints.parameterHints.enable": false,
-    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
-    "githubPullRequests.pullBranch": "never",
-    "[makefile]": {
-        "editor.insertSpaces": false
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
     },
-    "jupyter.askForKernelRestart": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "supermaven.enableFixWithSupermaven": true,
-    "notebook.defaultFormatter": "ms-python.black-formatter",
-    "workbench.activityBar.orientation": "vertical",
-    "cmake.pinnedCommands": [
-        "workbench.action.tasks.configureTaskRunner",
-        "workbench.action.tasks.runTask"
-    ],
-    "code-runner.executorMap": {
-
-        "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "zig": "zig run",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "php": "php",
-        "python": "python3 -u",
-        "perl": "perl",
-        "perl6": "perl6",
-        "ruby": "ruby",
-        "go": "go run",
-        "lua": "lua",
-        "groovy": "groovy",
-        "powershell": "powershell -ExecutionPolicy ByPass -File",
-        "bat": "cmd /c",
-        "shellscript": "bash",
-        "fsharp": "fsi",
-        "csharp": "scriptcs",
-        "vbscript": "cscript //Nologo",
-        "typescript": "ts-node",
-        "coffeescript": "coffee",
-        "scala": "scala",
-        "swift": "swift",
-        "julia": "julia",
-        "crystal": "crystal",
-        "ocaml": "ocaml",
-        "r": "Rscript",
-        "applescript": "osascript",
-        "clojure": "lein exec",
-        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-        "racket": "racket",
-        "scheme": "csi -script",
-        "ahk": "autohotkey",
-        "autoit": "autoit3",
-        "dart": "dart",
-        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
-        "haskell": "runghc",
-        "nim": "nim compile --verbosity:0 --hints:off --run",
-        "lisp": "sbcl --script",
-        "kit": "kitc --run",
-        "v": "v run",
-        "sass": "sass --style expanded",
-        "scss": "scss --style expanded",
-        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
-        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "sml": "cd $dir && sml $fileName",
-        "mojo": "mojo run",
-        "erlang": "escript",
-        "spwn": "spwn build",
-        "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
-        "gleam": "gleam run -m $fileNameWithoutExt"
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "notebook.formatOnSave.enabled": false,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.organizeImports": "never"
+  },
+  "ruff.lineLength": 100,
+  "cmake.configureOnOpen": false,
+  "cmake.automaticReconfigure": false,
+  "cmake.configureOnEdit": false,
+  "C_Cpp.intelliSenseEngine": "default",
+  "autoDocstring.docstringFormat": "numpy",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
     }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+
+  // Sync-Rsync
+  "sync-rsync.sites": [
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/research-cs-e2e-verification",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-e2e-verification",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine-toolkit",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-toolkit",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/pytholic/Documents/Developer/personal/Projects/mlops/mlops-orbit",
+      "remotePath": "pytholic@34.64.207.252:/home/pytholic/mlops-zoomcamp-pytholic",
+      "shell": "ssh -i ~/.ssh/mlops-zoomcamp"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/llama-cpp-test",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llama-cpp-test",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=.mypy*",
+        "--exclude=.cursorrules",
+        "--exclude=models_gguf/",
+        "--exclude=models_hf/",
+        "--exclude=llama.cpp",
+        "--exclude=llama-cpp-python"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/ollama",
+      "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/ollama",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=.mypy*",
+        "--exclude=.cursorrules",
+        "--exclude=models_hf/",
+        "--exclude=models_gguf/",
+        "--exclude=ollama/"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/ollama",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/ollama",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=.mypy*",
+        "--exclude=.cursorrules",
+        "--exclude=models_hf/",
+        "--exclude=models_gguf/",
+        "--exclude=ollama/"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/llama-cpp-test",
+      "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/llama-cpp-test",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=.mypy*",
+        "--exclude=.cursorrules",
+        "--exclude=models_gguf/",
+        "--exclude=models_hf/",
+        "--exclude=llama.cpp",
+        "--exclude=llama-cpp-python"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/exllama",
+      "remotePath": "pytholic@pytholic-dev-llm-inference:/home/pytholic/exllama",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=.mypy*",
+        "--exclude=.cursorrules",
+        "--exclude=models_exl2/",
+        "--exclude=models_hf/"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/llm/exllama",
+      "remotePath": "pytholic@galaxy27:/lunit/home/pytholic/exllama",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=.mypy*",
+        "--exclude=.cursorrules",
+        "--exclude=models_exl2/",
+        "--exclude=models_hf/"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=tmp/models/*", "--exclude=tmp/contexts/*"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine",
+      "remotePath": "pytholic@neptune4:/lunit/home/pytholic/work/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine",
+      "remotePath": "pytholic@neptune5:/lunit/home/pytholic/workspace/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=models/*", "--exclude=tmp/*"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-inference-postprocess",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-inference-postprocess",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/research-cs-gc",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-gc",
+      "shell": "ssh -i ~/.ssh/id_rsa"
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/internal-validation",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/internal-validation",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=rdp_results/",
+        "--exclude=*.json",
+        "--exclude=db/",
+        "--exclude=src/"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/nlp/llm_litgpt",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=out/"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_SmolLM",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_SmolLM",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=.cache/", "--exclude=poetry.lock"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_from_sratch",
+      "remotePath": "pytholic@10.110.0.113:/lunit/home/pytholic/personal/llm/llm_from_scratch",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=./gpt2/", "--exclude=./archive/"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/model-registry-work/lunit-model-registry",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/lunit-model-registry",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=example.com", "--exclude=mlruns", "--exclude=tmp/"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/model-registry-work/lunit-model-registry",
+      "remotePath": "pytholic@neptune4:/lunit/home/pytholic/work/lunit-model-registry",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=example.com", "--exclude=mlruns", "--exclude=tmp/"]
+    }
+  ],
+  "sync-rsync.exclude": [
+    ".venv",
+    "*.pth",
+    "*.onnx",
+    "checkpoints/",
+    ".vscode",
+    ".git",
+    ".cache/",
+    "__pycache__/",
+    "dist/",
+    "build/",
+    ".mypy_cache/",
+    ".ruff_cache/",
+    ".DS_Store",
+    ".gitignore",
+    ".gitattributes",
+    ".pytest_cache",
+    "*.egg-info"
+  ],
+  "sync-rsync.executableShell": "/bin/bash",
+  "sync-rsync.delete": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "HACK"],
+  "todo-tree.highlights.backgroundColourScheme": [
+    "orange",
+    "#FF8096",
+    "green",
+    "#89CFF0"
+  ],
+
+  // TODO tree
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "gutterIcon": true
+    },
+    "FIXME": {
+      "foreground": "white",
+      "iconColour": "yellow",
+      "gutterIcon": true
+    },
+    "BUG": {
+      "icon": "bug",
+      "foreground": "white",
+      "gutterIcon": true
+    },
+    "HACK": {
+      "icon": "checkbox",
+      "foreground": "white",
+      "gutterIcon": true
+    }
+  },
+  "notebook.lineNumbers": "on",
+  "editor.semanticHighlighting.enabled": true,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Nord",
+  "githubPullRequests.fileListLayout": "flat",
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+  "githubPullRequests.pullBranch": "never",
+  "[makefile]": {
+    "editor.insertSpaces": false
+  },
+  "jupyter.askForKernelRestart": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "workbench.activityBar.orientation": "vertical",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "files.autoSave": "afterDelay",
+
+  // Mypy
+  "mypy-type-checker.args": ["--config-file=${workspaceFolder}/pyproject.toml"]
 }
