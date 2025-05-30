@@ -100,48 +100,48 @@
   // Sync-Rsync
   "sync-rsync.sites": [
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/research-cs-e2e-verification",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/research-cs-e2e-verification",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-e2e-verification",
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine-toolkit",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine-toolkit",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-toolkit",
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/pytholic/Documents/Developer/personal/Projects/mlops/mlops-orbit",
+      "localPath": "/Users/pytholic/Developer/personal/Projects/mlops/mlops-orbit",
       "remotePath": "pytholic@34.64.207.252:/home/pytholic/mlops-zoomcamp-pytholic",
       "shell": "ssh -i ~/.ssh/mlops-zoomcamp"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine",
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-engine",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
       "remotePath": "pytholic@neptune4:/lunit/home/pytholic/work/insight-engine",
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/insight-inference-postprocess",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-inference-postprocess",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-inference-postprocess",
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/research-cs-gc",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/research-cs-gc",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-gc",
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/work/internal-validation",
+      "localPath": "/Users/lunit_haseebraja/Developer/work/internal-validation",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/internal-validation",
       "shell": "ssh -i ~/.ssh/id_rsa",
       "exclude": [".git", ".vscode", "rdp_results/", "*.json", "db/", "src/"]
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Documents/Developer/personal/ml/nlp/llm_litgpt",
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
       "shell": "ssh -i ~/.ssh/id_rsa",
       "exclude": [
