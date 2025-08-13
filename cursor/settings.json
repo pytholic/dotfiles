@@ -10,25 +10,30 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontFamily": "Comic Mono, Hack Nerd Font Mono",
+  "git.blame.editorDecoration.enabled": false,
   "terminal.integrated.fontSize": 16,
   "[python]": {
-    "editor.semanticHighlighting.enabled": false,
+    "editor.semanticHighlighting.enabled": true,
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "never"
     },
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "autoDocstring.docstringFormat": "google",
   "notebook.formatOnSave.enabled": false,
   "notebook.codeActionsOnSave": {
     "notebook.source.organizeImports": "never"
   },
   "ruff.lineLength": 100,
+
+  // CMake
   "cmake.configureOnOpen": false,
   "cmake.automaticReconfigure": false,
   "cmake.configureOnEdit": false,
   "C_Cpp.intelliSenseEngine": "default",
-  "autoDocstring.docstringFormat": "numpy",
+
+  // Vspacecode
   "vim.easymotion": true,
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -121,22 +126,6 @@
       "shell": "ssh -i ~/.ssh/id_rsa"
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Developer/work/research-cs-gc",
-      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-gc",
-      "shell": "ssh -i ~/.ssh/id_rsa"
-    },
-    {
-      "localPath": "/Users/lunit_haseebraja/Developer/work/internal-validation",
-      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/internal-validation",
-      "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": [
-        "--exclude=rdp_results/",
-        "--exclude=*.json",
-        "--exclude=db/",
-        "--exclude=src/"
-      ]
-    },
-    {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
       "shell": "ssh -i ~/.ssh/id_rsa",
@@ -220,5 +209,9 @@
   "files.autoSave": "afterDelay",
 
   // Mypy
-  "mypy-type-checker.args": ["--config-file=${workspaceFolder}/pyproject.toml"]
+  "mypy-type-checker.args": ["--config-file=${workspaceFolder}/pyproject.toml"],
+  "diffEditor.renderSideBySide": false,
+  "python.analysis.typeCheckingMode": "strict",
+  "cursorpyright.analysis.typeCheckingMode": "strict",
+  "editor.stickyScroll.maxLineCount": 8
 }

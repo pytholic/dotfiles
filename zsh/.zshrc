@@ -125,6 +125,7 @@ setopt HIST_IGNORE_SPACE
 alias python=python3
 alias pip=pip3
 alias lg=lazygit
+alias vi=nvim
 
 # add lvim to path
 export PATH="$HOME/.local/bin/:$PATH"
@@ -159,3 +160,8 @@ export OGC_ACCESS_TOKEN="api|gnYi9eZ0Nbv2ZIZLesQ9VHNlscxI1gSD3Mwecj8GqhA"
 export PATH=$PATH:$HOME/.ogc/bin
 
 . "$HOME/.local/bin/env"
+
+# Key bindings
+# Shift+Enter for newline without executing command
+bindkey '^[[13;2u' self-insert-unmapped
+bindkey -s '^[[13;2u' '\n'
