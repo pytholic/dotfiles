@@ -13,7 +13,7 @@
   "git.blame.editorDecoration.enabled": false,
   "terminal.integrated.fontSize": 16,
   "[python]": {
-    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticHighlighting.enabled": false,
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "never"
@@ -213,5 +213,8 @@
   "diffEditor.renderSideBySide": false,
   "python.analysis.typeCheckingMode": "strict",
   "cursorpyright.analysis.typeCheckingMode": "strict",
-  "editor.stickyScroll.maxLineCount": 8
+  "editor.stickyScroll.maxLineCount": 8,
+  "workbench.editorAssociations": {
+    "*.csv": "gc-excelviewer-csv-editor"
+  }
 }
