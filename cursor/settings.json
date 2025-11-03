@@ -107,18 +107,8 @@
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine",
       "shell": "ssh -i ~/.ssh/id_rsa",
       "args": [
-        "--exclude=tmp/models/*",
-        "--exclude=tmp/contexts/*",
-        "--exclude=tmp/dbt_trt16_cases/png/*",
-        "--exclude=tmp/dbt_trt16_cases/dcm/*",
-        "--exclude=tmp/visualization/*"
+        "--exclude=tmp/*",
       ]
-    },
-    {
-      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
-      "remotePath": "pytholic@neptune5:/lunit/home/pytholic/workspace/insight-engine",
-      "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": ["--exclude=models/*", "--exclude=tmp/*"]
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-inference-postprocess",
@@ -130,6 +120,11 @@
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
       "shell": "ssh -i ~/.ssh/id_rsa",
       "args": ["--exclude=out/"]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-risk/prognosia-risk-prediction",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/prognosia-risk-prediction",
+      "shell": "ssh -i ~/.ssh/id_rsa"
     }
   ],
   "sync-rsync.exclude": [
@@ -142,7 +137,7 @@
     ".cache/",
     "__pycache__/",
     "dist/",
-    "build/",
+    // "build/",
     ".mypy_cache/",
     ".ruff_cache/",
     ".DS_Store",
@@ -215,6 +210,17 @@
   "cursorpyright.analysis.typeCheckingMode": "strict",
   "editor.stickyScroll.maxLineCount": 8,
   "workbench.editorAssociations": {
-    "*.csv": "gc-excelviewer-csv-editor"
+    "*.csv": "gc-excelviewer-csv-editor",
+    "*.bin": "default"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   }
 }

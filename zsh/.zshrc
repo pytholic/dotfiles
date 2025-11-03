@@ -126,6 +126,20 @@ alias python=python3
 alias pip=pip3
 alias lg=lazygit
 alias vi=nvim
+# Standard ls replacement
+alias ls='eza -l --color=always --sort=size'
+# Show all (hidden) files
+alias lh='eza -al --color=always --sort=size'
+# Detailed list, putting directories first
+alias ll='eza -al --group-directories-first --color=always --sort=size'
+# Only show directories (-D is often for directories in eza)
+alias ld='eza -lD --color=always --sort=size'
+# Only show files
+alias lf='eza -lf --color=always --sort=size'
+# ls with git status
+alias lsg='eza -la --color=always --sort=size --long --git'
+# Show the directory structure as a tree
+alias tree='eza --tree'
 
 # add lvim to path
 export PATH="$HOME/.local/bin/:$PATH"
