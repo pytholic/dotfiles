@@ -108,12 +108,33 @@
       "shell": "ssh -i ~/.ssh/id_rsa",
       "args": [
         "--exclude=tmp/*",
+        "--exclude=dist/"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
+      "remotePath": "pytholic@galaxy25:/lunit/home/pytholic/workspace/insight-engine",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=tmp/*",
+        "--exclude=dist/"
+      ]
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine-base-builder",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-base-builder",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=tmp/*",
       ]
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-inference-postprocess",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-inference-postprocess",
-      "shell": "ssh -i ~/.ssh/id_rsa"
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=dist/"
+      ]
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
@@ -122,10 +143,15 @@
       "args": ["--exclude=out/"]
     },
     {
-      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-risk/prognosia-risk-prediction",
-      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/prognosia-risk-prediction",
-      "shell": "ssh -i ~/.ssh/id_rsa"
-    }
+      "localPath": "/Users/lunit_haseebraja/Developer/work/insight-risk/mvp-restructured/prognosia-risk-prediction",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/mvp-restructured/prognosia-risk-prediction",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": [
+        "--exclude=tmp/*",
+        "--exclude=dicom_handler",
+        "--exclude=dist/"
+      ]
+    },
   ],
   "sync-rsync.exclude": [
     ".venv",
@@ -136,7 +162,6 @@
     ".git",
     ".cache/",
     "__pycache__/",
-    "dist/",
     // "build/",
     ".mypy_cache/",
     ".ruff_cache/",
@@ -222,5 +247,9 @@
   },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "claudeCode.selectedModel": "default",
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   }
 }
