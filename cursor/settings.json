@@ -248,8 +248,12 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "claudeCode.selectedModel": "default",
+  "claudeCode.selectedModel": "haiku",
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "claudeCode.preferredLocation": "panel",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }

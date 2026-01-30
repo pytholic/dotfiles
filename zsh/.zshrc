@@ -122,8 +122,11 @@ setopt HIST_IGNORE_SPACE
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias python=python3
-alias pip=pip3
+# Only alias if not in a virtual environment
+if [ -z "$VIRTUAL_ENV" ]; then
+    alias python=python3
+    alias pip=pip3
+fi
 alias lg=lazygit
 alias vi=nvim
 # Standard ls replacement
@@ -179,3 +182,5 @@ export PATH=$PATH:$HOME/.ogc/bin
 # Shift+Enter for newline without executing command
 bindkey '^[[13;2u' self-insert-unmapped
 bindkey -s '^[[13;2u' '\n'
+
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
