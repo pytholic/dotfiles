@@ -33,7 +33,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
+zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
@@ -41,7 +41,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -81,6 +81,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(git fzf zsh-autosuggestions zsh-syntax-highlighting web-search)
+
+# Make autosuggestions async and limit buffer size for performance
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=100
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+
+# Skip compaudit (insecure dir check) and use a stable dump path
+ZSH_DISABLE_COMPFIX=true
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -147,24 +155,32 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export C_INCLUDE_PATH="/usr/local/include"
 export PATH=/opt/homebrew/bin:$PATH
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('${HOME}/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "${HOME}/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "${HOME}/miniconda3/etc/profile.d/conda.sh"
+# __conda_setup="$('${HOME}/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "${HOME}/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "${HOME}/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="${HOME}/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+conda() {
+    unfunction conda
+    __conda_setup="$('${HOME}/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
     else
-        export PATH="${HOME}/miniconda3/bin:$PATH"
+      export PATH="${HOME}/miniconda3/bin:$PATH"
     fi
-fi
-unset __conda_setup
+    unset __conda_setup
+    conda "$@"
+  }
 # <<< conda initialize <<<
+
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
@@ -179,5 +195,3 @@ export PATH=$PATH:$HOME/.ogc/bin
 # Shift+Enter for newline without executing command
 bindkey '^[[13;2u' self-insert-unmapped
 bindkey -s '^[[13;2u' '\n'
-
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST

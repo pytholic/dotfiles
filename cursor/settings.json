@@ -16,14 +16,14 @@
     "editor.semanticHighlighting.enabled": false,
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "never"
+      "source.organizeImports": "never",
     },
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "autoDocstring.docstringFormat": "google",
   "notebook.formatOnSave.enabled": false,
   "notebook.codeActionsOnSave": {
-    "notebook.source.organizeImports": "never"
+    "notebook.source.organizeImports": "never",
   },
   "ruff.lineLength": 100,
 
@@ -39,7 +39,7 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<space>"],
-      "commands": ["vspacecode.space"]
+      "commands": ["vspacecode.space"],
     },
     {
       "before": [","],
@@ -47,15 +47,15 @@
         "vspacecode.space",
         {
           "command": "whichkey.triggerKey",
-          "args": "m"
-        }
-      ]
-    }
+          "args": "m",
+        },
+      ],
+    },
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["<space>"],
-      "commands": ["vspacecode.space"]
+      "commands": ["vspacecode.space"],
     },
     {
       "before": [","],
@@ -63,18 +63,18 @@
         "vspacecode.space",
         {
           "command": "whichkey.triggerKey",
-          "args": "m"
-        }
-      ]
+          "args": "m",
+        },
+      ],
     },
     {
       "before": [">"],
-      "commands": ["editor.action.indentLines"]
+      "commands": ["editor.action.indentLines"],
     },
     {
       "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
-    }
+      "commands": ["editor.action.outdentLines"],
+    },
   ],
 
   // Sync-Rsync
@@ -82,12 +82,12 @@
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/research-cs-e2e-verification",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-e2e-verification",
-      "shell": "ssh -i ~/.ssh/id_rsa"
+      "shell": "ssh -i ~/.ssh/id_rsa",
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine-toolkit",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-toolkit",
-      "shell": "ssh -i ~/.ssh/id_rsa"
+      "shell": "ssh -i ~/.ssh/id_rsa",
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/llm/llama-cpp-test",
@@ -99,58 +99,61 @@
         "--exclude=models_gguf/",
         "--exclude=models_hf/",
         "--exclude=llama.cpp",
-        "--exclude=llama-cpp-python"
-      ]
+        "--exclude=llama-cpp-python",
+      ],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": [
-        "--exclude=tmp/*",
-        "--exclude=dist/"
-      ]
+      "args": ["--exclude=tmp/*", "--exclude=dist/"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
       "remotePath": "pytholic@galaxy25:/lunit/home/pytholic/workspace/insight-engine",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": [
-        "--exclude=tmp/*",
-        "--exclude=dist/"
-      ]
+      "args": ["--exclude=tmp/*", "--exclude=dist/"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine-base-builder",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-base-builder",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": [
-        "--exclude=tmp/*",
-      ]
+      "args": ["--exclude=tmp/*"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-inference-postprocess",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-inference-postprocess",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": [
-        "--exclude=dist/"
-      ]
+      "args": ["--exclude=dist/", "--exclude=tmp/*"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": ["--exclude=out/"]
+      "args": ["--exclude=out/"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-risk/mvp-restructured/prognosia-risk-prediction",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/mvp-restructured/prognosia-risk-prediction",
       "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": [
-        "--exclude=tmp/*",
-        "--exclude=dicom_handler",
-        "--exclude=dist/"
-      ]
+      "args": ["--exclude=tmp/*", "--exclude=dicom_handler", "--exclude=dist/"],
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/projects/LLM/LegoLLM",
+      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/LegoLLM",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=tmp/*", "--exclude=checkpoints"],
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/personal/projects/LLM/LegoLLM",
+      "remotePath": "pytholic@helios08:/lunit/home/pytholic/personal/LegoLLM",
+      "shell": "ssh -i ~/.ssh/id_rsa",
+      "args": ["--exclude=tmp/*", "--exclude=checkpoints"],
+    },
+    {
+      "localPath": "/Users/lunit_haseebraja/Developer/work/research-data-pipeline",
+      "remotePath": "pytholic@helios08:/lunit/home/pytholic/work/research-data-pipeline",
+      "shell": "ssh -i ~/.ssh/id_rsa",
     },
   ],
   "sync-rsync.exclude": [
@@ -169,7 +172,7 @@
     ".gitignore",
     ".gitattributes",
     ".pytest_cache",
-    "*.egg-info"
+    "*.egg-info",
   ],
   "sync-rsync.executableShell": "/bin/bash",
   "sync-rsync.delete": true,
@@ -179,30 +182,30 @@
     "orange",
     "#FF8096",
     "green",
-    "#89CFF0"
+    "#89CFF0",
   ],
 
   // TODO tree
   "todo-tree.highlights.useColourScheme": true,
   "todo-tree.highlights.customHighlight": {
     "TODO": {
-      "gutterIcon": true
+      "gutterIcon": true,
     },
     "FIXME": {
       "foreground": "white",
       "iconColour": "yellow",
-      "gutterIcon": true
+      "gutterIcon": true,
     },
     "BUG": {
       "icon": "bug",
       "foreground": "white",
-      "gutterIcon": true
+      "gutterIcon": true,
     },
     "HACK": {
       "icon": "checkbox",
       "foreground": "white",
-      "gutterIcon": true
-    }
+      "gutterIcon": true,
+    },
   },
   "notebook.lineNumbers": "on",
   "editor.semanticHighlighting.enabled": true,
@@ -216,7 +219,7 @@
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "githubPullRequests.pullBranch": "never",
   "[makefile]": {
-    "editor.insertSpaces": false
+    "editor.insertSpaces": false,
   },
   "jupyter.askForKernelRestart": false,
   "security.workspace.trust.untrustedFiles": "open",
@@ -224,7 +227,7 @@
   "workbench.activityBar.orientation": "vertical",
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
+    "workbench.action.tasks.runTask",
   ],
   "files.autoSave": "afterDelay",
 
@@ -236,24 +239,44 @@
   "editor.stickyScroll.maxLineCount": 8,
   "workbench.editorAssociations": {
     "*.csv": "gc-excelviewer-csv-editor",
-    "*.bin": "default"
+    "*.bin": "default",
   },
   "explorer.confirmDragAndDrop": false,
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "claudeCode.selectedModel": "default",
   "[cpp]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features",
   },
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "yaml.schemas": {
+    "file:///Users/lunit_haseebraja/.cursor/extensions/continue.continue-1.2.16-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ],
+    "file:///Users/lunit_haseebraja/.cursor/extensions/continue.continue-1.2.17-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ],
+    "file:///Users/lunit_haseebraja/.cursor/extensions/continue.continue-1.2.18-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ],
+    "file:///Users/lunit_haseebraja/.cursor/extensions/continue.continue-1.2.21-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ],
+    "file:///Users/lunit_haseebraja/.cursor/extensions/continue.continue-1.2.22-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ]
+  },
+  "cursor.cpp.disabledLanguages": [
+    "plaintext"
+  ],
 }

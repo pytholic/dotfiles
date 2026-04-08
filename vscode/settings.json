@@ -238,5 +238,6 @@
   "jupyter.askForKernelRestart": false,
   "security.workspace.trust.untrustedFiles": "open",
   "supermaven.enableFixWithSupermaven": true,
-  "notebook.defaultFormatter": "ms-python.black-formatter"
+  "notebook.defaultFormatter": "ms-python.black-formatter",
+  "claudeCode.preferredLocation": "panel"
 }
