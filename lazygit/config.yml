@@ -55,10 +55,13 @@ gui:
   animateExplosion: true # shows an explosion animation when nuking the working tree
   portraitMode: "auto" # one of 'auto' | 'never' | 'always'
 git:
-  pagers:
-    - pager: delta --dark --paging=never --line-numbers
-      colorArg: always
-    - externalDiffCommand: difft --color=always
+  # paging:
+    # colorArg: always
+    # pager: delta --dark --paging=never --line-numbers
+  paging:
+    colorArg: always
+    # Use the --theme flag + explicit styles to kill the "gray/dull" look
+    # pager: "delta --dark --paging=never --line-numbers --syntax-theme='Monokai Extended' --plus-style='syntax #003800' --plus-emph-style='syntax #006000' --minus-style='syntax #3f0001' --minus-emph-style='syntax #6f0001'"
   commit:
     signOff: false
   merging:
