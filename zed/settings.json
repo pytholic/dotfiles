@@ -10,13 +10,14 @@
   "show_edit_predictions": false,
   "diff_view_style": "unified",
   "context_servers": {
-    "notion": {
+    "Notion": {
+      "enabled": true,
       "command": {
         "path": "npx",
         "args": ["-y", "@notionhq/notion-mcp-server"],
-        "env": {}
+        "env": {},
       },
-      "settings": {}
+      "settings": {},
     },
   },
   "git_panel": {
