@@ -50,6 +50,9 @@ alias tree='eza --tree'
 # OGC
 export OGC_ACCESS_TOKEN="api|gnYi9eZ0Nbv2ZIZLesQ9VHNlscxI1gSD3Mwecj8GqhA"
 
+# Secrets from Keychain
+export NOTION_TOKEN=$(security find-generic-password -a "$USER" -s "notion-mcp-token" -w 2>/dev/null)
+
 # Conda (lazy-load — only initializes on first use)
 conda() {
   unfunction conda
@@ -72,3 +75,5 @@ bindkey -s '^[[13;2u' '\n'
 
 # Starship prompt
 eval "$(starship init zsh)"
+#export ANTHROPIC_BASE_URL=https://ai-gateway.tig.lunit.in
+#export ANTHROPIC_API_KEY=sk-oX81FxWV_q8rKB4JtWfYSQ

@@ -18,7 +18,7 @@
 	name = Raja Haseeb
 	email = rajahaseeb147@gmail.com
 [credential]
-	helper = store
+	helper = manager
 # Conditional configs
 [includeIf "gitdir:~/Developer/work/"]
     path = ~/.gitconfig-work
@@ -44,3 +44,5 @@
 	required = true
 [fetch]
 	prune = true
+[credential "https://dev.azure.com"]
+	useHttpPath = true

@@ -7,19 +7,33 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_edit_predictions": false,
+  "diff_view_style": "unified",
+  "context_servers": {
+    "notion": {
+      "command": {
+        "path": "npx",
+        "args": ["-y", "@notionhq/notion-mcp-server"],
+        "env": {}
+      },
+      "settings": {}
+    },
+  },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
+    "thinking_display": "always_collapsed",
+    "single_file_review": true,
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "vertical_scroll_margin": 5.0,
   "icon_theme": "Catppuccin Frappé",
@@ -32,6 +46,7 @@
   },
   "vim_mode": true,
   "terminal": {
+    "dock": "bottom",
     "font_size": 16.0,
     "font_family": "Comic Mono",
     "font_fallbacks": ["Hack Nerd Font Mono"],
@@ -56,9 +71,17 @@
   "soft_wrap": "editor_width",
   "agent_servers": {
     "cursor": {
-      "type": "registry"
+      "default_config_options": {
+        "model": "claude-opus-4-6[thinking=true,context=200k,effort=high,fast=false]",
+        "mode": "agent",
+      },
+      "type": "registry",
     },
     "claude-acp": {
+      "default_config_options": {
+        "mode": "default",
+        "model": "opusplan",
+      },
       "type": "registry",
     },
   },
@@ -68,13 +91,17 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha (Blur) [Heavy]",
+    "dark": "Catppuccin Macchiato",
   },
   "edit_predictions": {
-    "provider": "zed",
+    "ollama": {
+      "model": "qwen2.5-coder:3b",
+    },
+    "provider": "copilot",
   },
   "languages": {
     "Python": {
+      "show_edit_predictions": true,
       "code_actions_on_format": {
         "source.organizeImports.ruff": true,
       },
@@ -85,4 +112,13 @@
       },
     },
   },
+  "file_scan_exclusions": [
+    "**/.venv",
+    "**/__pycache__",
+    "**/.mypy_cache",
+    "**/.pytest_cache",
+    "**/.ruff_cache",
+    "**/dist",
+    "**/build",
+  ],
 }

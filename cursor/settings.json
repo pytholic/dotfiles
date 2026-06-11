@@ -82,78 +82,59 @@
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/research-cs-e2e-verification",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/research-cs-e2e-verification",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine-toolkit",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-toolkit",
-      "shell": "ssh -i ~/.ssh/id_rsa",
-    },
-    {
-      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/llm/llama-cpp-test",
-      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llama-cpp-test",
-      "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": [
-        "--exclude=.mypy*",
-        "--exclude=.cursorrules",
-        "--exclude=models_gguf/",
-        "--exclude=models_hf/",
-        "--exclude=llama.cpp",
-        "--exclude=llama-cpp-python",
-      ],
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
       "args": ["--exclude=tmp/*", "--exclude=dist/"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine",
-      "remotePath": "pytholic@galaxy25:/lunit/home/pytholic/workspace/insight-engine",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "remotePath": "lunit_haseebraja@gcp-cc-12:/home/lunit_haseebraja/workspace/insight-engine",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_edd25519_gcp_cc_12",
       "args": ["--exclude=tmp/*", "--exclude=dist/"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-engine-base-builder",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-engine-base-builder",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
       "args": ["--exclude=tmp/*"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-inference-postprocess",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/insight-inference-postprocess",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
       "args": ["--exclude=dist/", "--exclude=tmp/*"],
-    },
-    {
-      "localPath": "/Users/lunit_haseebraja/Developer/personal/ml/nlp/llm_litgpt",
-      "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/llm/llm_litgpt",
-      "shell": "ssh -i ~/.ssh/id_rsa",
-      "args": ["--exclude=out/"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/insight-risk/mvp-restructured/prognosia-risk-prediction",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/workspace/mvp-restructured/prognosia-risk-prediction",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
       "args": ["--exclude=tmp/*", "--exclude=dicom_handler", "--exclude=dist/"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/projects/LLM/LegoLLM",
       "remotePath": "pytholic@galaxy13:/lunit/home/pytholic/personal/LegoLLM",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
       "args": ["--exclude=tmp/*", "--exclude=checkpoints"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/personal/projects/LLM/LegoLLM",
       "remotePath": "pytholic@helios08:/lunit/home/pytholic/personal/LegoLLM",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
       "args": ["--exclude=tmp/*", "--exclude=checkpoints"],
     },
     {
       "localPath": "/Users/lunit_haseebraja/Developer/work/research-data-pipeline",
       "remotePath": "pytholic@helios08:/lunit/home/pytholic/work/research-data-pipeline",
-      "shell": "ssh -i ~/.ssh/id_rsa",
+      "shell": "ssh -o ConnectTimeout=5 -i ~/.ssh/id_rsa",
     },
   ],
   "sync-rsync.exclude": [
@@ -279,4 +260,12 @@
   "cursor.cpp.disabledLanguages": [
     "plaintext"
   ],
+  "window.autoDetectColorScheme": false,
+  "remote.SSH.remotePlatform": {
+    "galaxy13": "linux",
+    "gcp-cc-12": "linux"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }

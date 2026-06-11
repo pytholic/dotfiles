@@ -16,6 +16,7 @@ declare -a FILES=(
 	"Library/Application Support/Code/User/settings.json:vscode/settings.json"
 	"Library/Application Support/Cursor/User/settings.json:cursor/settings.json"
 	".config/zed/settings.json:zed/settings.json"
+	".config/zed/keymap.json:zed/keymap.json"
 	".config/gcloud/configurations:gcloud/configurations"
 )
 
