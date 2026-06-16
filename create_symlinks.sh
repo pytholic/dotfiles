@@ -18,6 +18,7 @@ declare -a FILES=(
 	".config/zed/settings.json:zed/settings.json"
 	".config/zed/keymap.json:zed/keymap.json"
 	".config/gcloud/configurations:gcloud/configurations"
+	".config/starship.toml:starship/starship.toml"
 )
 
 # Create symlinks
