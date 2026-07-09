@@ -7,20 +7,32 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "new_window",
   "show_edit_predictions": false,
   "diff_view_style": "unified",
   "context_servers": {
+    "mcp-server-context7": {
+      "enabled": false,
+      "remote": false,
+      "settings": {},
+    },
+    "mcp-atlassian": {
+      "enabled": false,
+      "remote": false,
+      "command": "/Users/lunit_haseebraja/.claude/scripts/mcp-atlassian",
+      "args": [],
+      "env": {},
+    },
     "Notion": {
-      "enabled": true,
-      "command": {
-        "path": "npx",
-        "args": ["-y", "@notionhq/notion-mcp-server"],
-        "env": {},
-      },
+      "enabled": false,
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {},
       "settings": {},
     },
   },
   "git_panel": {
+    "tree_view": false,
     "dock": "left",
   },
   "outline_panel": {
@@ -67,19 +79,30 @@
     },
   },
   "buffer_font_family": "Comic Mono",
-  "semantic_tokens": "full",
+  "semantic_tokens": "combined",
+  "global_lsp_settings": {
+    "semantic_token_rules": [{ "token_type": "comment" }],
+  },
   "wrap_guides": [100],
   "soft_wrap": "editor_width",
   "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry",
+    },
     "cursor": {
       "default_config_options": {
+        "effort": "medium",
         "model": "claude-opus-4-6[thinking=true,context=200k,effort=high,fast=false]",
         "mode": "agent",
       },
       "type": "registry",
     },
     "claude-acp": {
+      "favorite_config_option_values": {
+        "model": ["opusplan"],
+      },
       "default_config_options": {
+        "effort": "high",
         "mode": "default",
         "model": "opusplan",
       },
@@ -94,7 +117,22 @@
     "light": "One Light",
     "dark": "Catppuccin Macchiato",
   },
+  "theme_overrides": {
+    "Catppuccin Macchiato": {
+      "syntax": {
+        "comment": {
+          "color": "#7a828e",
+          "font_style": "italic",
+        },
+        "string.doc": {
+          "color": "#cad3f5",
+          "font_style": "italic",
+        },
+      },
+    },
+  },
   "edit_predictions": {
+    "mode": "subtle",
     "ollama": {
       "model": "qwen2.5-coder:3b",
     },
