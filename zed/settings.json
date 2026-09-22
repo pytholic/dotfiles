@@ -7,24 +7,145 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "language_models": {
+    "ollama": {
+      "api_url": "http://localhost:11434"
+    },
+    "openai_compatible": {
+      "Lunit Gateway": {
+        "api_url": "https://ai-gateway.tig.lunit.in/v1",
+        "available_models": [
+          {
+            "name": "glm-5.2",
+            "display_name": "GLM 5.2 (Gateway)",
+            "max_tokens": 196608,
+            "max_output_tokens": 8192,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "agent_ui_font_size": 17.0,
+  "ssh_connections": [
+    {
+      "host": "helios08",
+      "args": [],
+      "projects": []
+    },
+    {
+      "host": "helios08",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/lunit/home/pytholic/work/csg-data-agent"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "galaxy13",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/lunit/home/pytholic/workspace/insight-engine/./"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "galaxy13",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/lunit/home/pytholic/workspace/insight-engine-toolkit"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "astro01",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/lunit/home/pytholic/work/csg-data-agent-CAA-107/./"
+          ]
+        },
+        {
+          "paths": [
+            "/lunit/home/pytholic/work/csg-data-agent/./"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "gcp-profiling-vm",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/pytholic/workspace/insight-engine"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "gcp-cc-12",
+      "args": [],
+      "projects": []
+    },
+    {
+      "host": "gcp-profiling-vm-high-spec",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/pytholic/workspace/insight-engine"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "gcp-ngiq-prof",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/pytholic/workspace/insight-engine/./"
+          ]
+        }
+      ]
+    }
+  ],
   "cli_default_open_behavior": "new_window",
   "show_edit_predictions": false,
   "diff_view_style": "unified",
   "context_servers": {
     "mcp-server-context7": {
-      "enabled": false,
+      "enabled": true,
       "remote": false,
-      "settings": {},
+      "settings": {
+        "context7_api_key": "ctx7sk-268b5849-0f16-4bd8-a1c0-adf6de4c39c8"
+      },
     },
     "mcp-atlassian": {
-      "enabled": false,
+      "enabled": true,
       "remote": false,
       "command": "/Users/lunit_haseebraja/.claude/scripts/mcp-atlassian",
       "args": [],
       "env": {},
     },
     "Notion": {
-      "enabled": false,
+      "enabled": true,
       "command": "npx",
       "args": ["-y", "@notionhq/notion-mcp-server"],
       "env": {},
@@ -39,6 +160,12 @@
     "dock": "left",
   },
   "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "Lunit Gateway",
+      "model": "glm-5.2",
+      "enable_thinking": false
+    },
     "thinking_display": "always_collapsed",
     "single_file_review": true,
     "dock": "right",
@@ -49,7 +176,11 @@
     "dock": "left",
   },
   "vertical_scroll_margin": 5.0,
-  "icon_theme": "Catppuccin Frappé",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Catppuccin Frappé",
+    "dark": "Catppuccin Frappé"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -86,34 +217,37 @@
   "wrap_guides": [100],
   "soft_wrap": "editor_width",
   "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "default",
+        "fast": false,
+        "model": "opus[1m]",
+        "effort": "medium"
+      },
+      "type": "registry"
+    },
     "github-copilot-cli": {
+      "default_config_options": {
+        "mode": "https://agentclientprotocol.com/protocol/session-modes#plan"
+      },
       "type": "registry",
     },
     "cursor": {
       "default_config_options": {
-        "effort": "medium",
-        "model": "claude-opus-4-6[thinking=true,context=200k,effort=high,fast=false]",
+        "context": "300k",
+        "fast": "false",
+        "effort": "high",
+        "model": "composer-2.5",
         "mode": "agent",
       },
       "type": "registry",
     },
-    "claude-acp": {
-      "favorite_config_option_values": {
-        "model": ["opusplan"],
-      },
-      "default_config_options": {
-        "effort": "high",
-        "mode": "default",
-        "model": "opusplan",
-      },
-      "type": "registry",
-    },
   },
-  "ui_font_size": 16,
+  "ui_font_size": 16.0,
   "agent_buffer_font_size": 14.0,
   "buffer_font_size": 16.0,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
     "dark": "Catppuccin Macchiato",
   },
@@ -132,11 +266,17 @@
     },
   },
   "edit_predictions": {
+    "open_ai_compatible_api": {
+      "max_output_tokens": 64,
+      "prompt_format": "glm",
+      "model": "glm-5.2",
+      "api_url": "https://ai-gateway.tig.lunit.in/v1/completions"
+    },
     "mode": "subtle",
     "ollama": {
       "model": "qwen2.5-coder:3b",
     },
-    "provider": "copilot",
+    "provider": "zed",
   },
   "languages": {
     "Python": {
@@ -157,7 +297,6 @@
     "**/.mypy_cache",
     "**/.pytest_cache",
     "**/.ruff_cache",
-    "**/dist",
     "**/build",
   ],
 }

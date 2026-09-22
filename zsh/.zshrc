@@ -77,3 +77,6 @@ bindkey -s '^[[13;2u' '\n'
 eval "$(starship init zsh)"
 #export ANTHROPIC_BASE_URL=https://ai-gateway.tig.lunit.in
 #export ANTHROPIC_API_KEY=sk-oX81FxWV_q8rKB4JtWfYSQ
+
+# Homebrew Ruby (for Jekyll — portfolio site)
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
